@@ -1,7 +1,10 @@
-export default (state = [], action) => {
+export default(state = [], action) => {
   switch (action.type) {
-    case "FETCH_USERS":
-      return [...state, action.payload];
+    case "FETCH_USER":
+      return [
+        ...state,
+        action.payload
+      ];
       break;
     default:
       return state;
